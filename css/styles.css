@@ -2,7 +2,11 @@
    Author: Sendinee MARDAY
    Created: Janvier 2022
 */
-
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 body,
 html {
     width: 100%;
@@ -1617,7 +1621,6 @@ a:hover.back-to-top {
 	/* Pages en plus */
 	.ex-header {
 		padding-top: 11rem;
-		padding-bottom: 9rem;
 	}
 
 	.ex-basic-2 .text-container.dark {
@@ -2014,7 +2017,7 @@ a:hover.back-to-top {
 	/* end */
 
 
-	/* Newsletter */
+	/* Abonné */
 	.form .text-container {
 		width: 64.75rem;
 		padding-top: 6rem;
@@ -2066,3 +2069,4 @@ a:hover.back-to-top {
 	/* end */
 }
 /* end */
+
