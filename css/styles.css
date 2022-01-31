@@ -2070,3 +2070,36 @@ a:hover.back-to-top {
 }
 /* end */
 
+/*-- Propos --*/
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin: 8px;
+}
+
+.about-section {
+	padding: 50px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0);
+	color: #070707;
+}
+
+.container {
+	padding: 0 16px;
+}
+
+.container::after, .row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.title {
+	color: #020202;
+}
+
+@media screen and (max-width: 650px) {
+	.column {
+		width: 100%;
+		display: block;
+	}
+}
