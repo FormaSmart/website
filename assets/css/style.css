@@ -575,7 +575,7 @@ section {
   z-index: -1;
 }
 .contenu .icon-box:hover::before {
-  background: #3498db;
+  background: rgba(172, 202, 232, 0.9);
   right: 0;
   top: 0;
   width: 100%;
@@ -590,7 +590,7 @@ section {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  background: #3498db;
+  background: rgba(37, 78, 191, 0.63);
   transition: all 0.3s ease-in-out;
 }
 .contenu .icon i {
@@ -618,7 +618,7 @@ section {
   background: #fff;
 }
 .contenu .icon-box:hover .icon i {
-  color: #3498db;
+  color: rgba(253, 253, 253, 0.85);
 }
 
 /*-- Plus de Service --*/
@@ -665,10 +665,10 @@ section {
   text-decoration: underline;
 }
 .information .card:hover .card-body {
-  background: #3498db;
+  background: #5897d7;
 }
 .information .card:hover .read-more a, .information .card:hover .card-title, .information .card:hover .card-title a, .information .card:hover .card-text {
-  color: #fff;
+  color: #ffffff;
 }
 
 /*-- # Features --*/
