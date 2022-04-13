@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 /*-- Version mobile --*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
-    transition-delay: 0 !important;
+    transition-delay: 0s !important;
   }
 }
 /*-- Header --*/
@@ -565,7 +565,7 @@ section {
 .contenu .icon-box::before {
   content: "";
   position: absolute;
-  background: #e1f0fa;
+  background: rgba(206, 187, 234, 0.78);
   right: -60px;
   top: -40px;
   width: 100px;
@@ -575,7 +575,7 @@ section {
   z-index: -1;
 }
 .contenu .icon-box:hover::before {
-  background: rgba(172, 202, 232, 0.9);
+  background: rgb(255, 255, 255);
   right: 0;
   top: 0;
   width: 100%;
@@ -1198,3 +1198,178 @@ th, td{
   background-color: #97bef3;
   color: #ffffff;
 }
+
+/* ------- Page -------- */
+p{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.text-center{
+  text-align: center !important;
+}
+.cards-section {
+  background-image: initial;
+  background-color: #FFFFFFFF;
+  padding: 150px 0;
+}
+section{
+  display: block;
+}
+.container{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.cards-section .intro {
+  color: #030303;
+  margin: 0 auto 60px;
+  max-width: 800px;
+}
+.cards-section .item {
+  margin-bottom: 30px;
+}
+.col-6{
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.col-6, .col-lg-4{
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.cards-section .cards-wrapper{
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards-section .item-inner {
+  background-image: initial;
+  background-color: rgb(50, 50, 51);
+  border-color: rgb(70, 72, 73);
+}
+.cards-section .item-inner {
+  background: #fff;
+  position: relative;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  background-clip: padding-box;
+  height: 100%;
+}
+/* cards section green */
+.cards-section .item-green .item-inner{
+  border-top-color: rgb(84, 106,87);
+}
+.cards-section .item-green .item-inner{
+  border-top: 3px solid #75c181;
+}
+/* cards section pink */
+.cards-section .item-pink .item-inner{
+  border-top-color: rgb(100, 55, 75);
+}
+.cards-section .item-pink .item-inner{
+  border-top: 3px solid #EA5395;
+}
+/* cards section blue */
+.cards-section .item-blue .item-inner{
+  border-top-color: rgb(67, 97, 113);
+}
+.cards-section .item-blue .item-inner{
+  border-top: 3px solid #58bbee;
+}
+/* cards section purple */
+.cards-section .item-purple .item-inner{
+  border-top-color: rgb(96, 75, 104);
+}
+.cards-section .item-purple .item-inner{
+  border-top: 3px solid #8A40A7;
+}
+/* cards section primary */
+.cards-section .item-primary .item-inner{
+  border-top-color: rgb(88, 119, 120);
+}
+.cards-section .item-primary .item-inner{
+  border-top: 3px solid #40badb;
+}
+/* cards section orange */
+.cards-section .item-orange .item-inner{
+  border-top-color: rgb(121, 91, 66);
+}
+.cards-section .item-orange .item-inner{
+  border-top: 3px solid #F88C30;
+}
+
+/*--- link ---*/
+.cards-section .item-inner .link{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+a{
+  color: rgb(16, 17, 17);
+  -webkit-transition: all 0.4s ease-in-out;
+  text-decoration-color: initial;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:-webkit-any-link{
+  cursor: pointer;
+}
+span{
+  color: #070707;
+}
+@media(max-width: 767.98px){
+  .cards-section .item-inner{
+    padding: 30px 15px;
+  }
+}
+
+/*------- button -------*/
+button {
+  margin: 50px;
+  font-family: inherit;
+}
+/*- Start: button fill -*/
+.fill {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 50px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.fill::after {
+  content: "";
+  background-color: #dcbaff;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.3s;
+}
+
+.fill:hover::after {
+  top: 0px;
+  left: 0px;
+}
+/*- End : button fill -*/
+
+
