@@ -1,17 +1,37 @@
-( function( window, factory ) {
-  if ( typeof define == 'function' && define.amd ) {
+/*!
+ * Isotope PACKAGED v3.0.6
+ *
+ * Licensed GPLv3 for open source use
+ * or Isotope Commercial License for commercial use
+ *
+ * https://isotope.metafizzy.co
+ * Copyright 2010-2018 Metafizzy
+ */
 
+/**
+ * Bridget makes jQuery widgets
+ * v2.0.1
+ * MIT license
+ */
+
+/* jshint browser: true, strict: true, undef: true, unused: true */
+
+( function( window, factory ) {
+  // universal module definition
+  /*jshint strict: false */ /* globals define, module, require */
+  if ( typeof define == 'function' && define.amd ) {
+    // AMD
     define( 'jquery-bridget/jquery-bridget',[ 'jquery' ], function( jQuery ) {
       return factory( window, jQuery );
     });
   } else if ( typeof module == 'object' && module.exports ) {
-
+    // CommonJS
     module.exports = factory(
       window,
       require('jquery')
     );
   } else {
-
+    // browser global
     window.jQueryBridget = factory(
       window,
       window.jQuery
@@ -21,10 +41,12 @@
 }( window, function factory( window, jQuery ) {
 'use strict';
 
+// ----- utils ----- //
 
 var arraySlice = Array.prototype.slice;
 
-
+// helper function for logging errors
+// $.error breaks jQuery chaining
 var console = window.console;
 var logError = typeof console == 'undefined' ? function() {} :
   function( message ) {
@@ -39,8 +61,11 @@ function jQueryBridget( namespace, PluginClass, $ ) {
     return;
   }
 
+  // add option method -> $().plugin('option', {...})
   if ( !PluginClass.prototype.option ) {
+    // option setter
     PluginClass.prototype.option = function( opts ) {
+      // bail out if not an object
       if ( !$.isPlainObject( opts ) ){
         return;
       }
@@ -51,13 +76,17 @@ function jQueryBridget( namespace, PluginClass, $ ) {
   // make jQuery plugin
   $.fn[ namespace ] = function( arg0 /*, arg1 */ ) {
     if ( typeof arg0 == 'string' ) {
+      // method call $().plugin( 'methodName', { options } )
+      // shift arguments by 1
       var args = arraySlice.call( arguments, 1 );
       return methodCall( this, arg0, args );
     }
+    // just $().plugin({ options })
     plainCall( this, arg0 );
     return this;
   };
 
+  // $().plugin('methodName')
   function methodCall( $elems, methodName, args ) {
     var returnValue;
     var pluginMethodStr = '$().' + namespace + '("' + methodName + '")';
@@ -123,15 +152,25 @@ return jQueryBridget;
 
 }));
 
+/**
+ * EvEmitter v1.1.0
+ * Lil' event emitter
+ * MIT License
+ */
 
-
+/* jshint unused: true, undef: true, strict: true */
 
 ( function( global, factory ) {
+  // universal module definition
+  /* jshint strict: false */ /* globals define, module, window */
   if ( typeof define == 'function' && define.amd ) {
+    // AMD - RequireJS
     define( 'ev-emitter/ev-emitter',factory );
   } else if ( typeof module == 'object' && module.exports ) {
+    // CommonJS - Browserify, Webpack
     module.exports = factory();
   } else {
+    // Browser globals
     global.EvEmitter = factory();
   }
 
@@ -194,17 +233,23 @@ proto.emitEvent = function( eventName, args ) {
   if ( !listeners || !listeners.length ) {
     return;
   }
+  // copy over to avoid interference if .off() in listener
   listeners = listeners.slice(0);
   args = args || [];
+  // once stuff
   var onceListeners = this._onceEvents && this._onceEvents[ eventName ];
 
   for ( var i=0; i < listeners.length; i++ ) {
     var listener = listeners[i]
     var isOnce = onceListeners && onceListeners[ listener ];
     if ( isOnce ) {
+      // remove listener
+      // remove before trigger to prevent recursion
       this.off( eventName, listener );
+      // unset once flag
       delete onceListeners[ listener ];
     }
+    // trigger listener
     listener.apply( this, args );
   }
 
@@ -220,9 +265,14 @@ return EvEmitter;
 
 }));
 
+/*!
+ * getSize v2.0.3
+ * measure size of elements
+ * MIT license
+ */
 
-
-
+/* jshint browser: true, strict: true, undef: true, unused: true */
+/* globals console: false */
 
 ( function( window, factory ) {
   /* jshint strict: false */ /* globals define, module */
@@ -294,7 +344,10 @@ function getZeroSize() {
 
 // -------------------------- getStyle -------------------------- //
 
-
+/**
+ * getStyle, get style of element, check for Firefox bug
+ * https://bugzilla.mozilla.org/show_bug.cgi?id=548397
+ */
 function getStyle( elem ) {
   var style = getComputedStyle( elem );
   if ( !style ) {
@@ -311,7 +364,11 @@ var isSetup = false;
 
 var isBoxSizeOuter;
 
-
+/**
+ * setup
+ * check isBoxSizerOuter
+ * do on first getSize() rather than on page load for Firefox bug
+ */
 function setup() {
   // setup once
   if ( isSetup ) {
@@ -321,7 +378,10 @@ function setup() {
 
   // -------------------------- box sizing -------------------------- //
 
-
+  /**
+   * Chrome & Safari measure the outer-width on style.width on border-box elems
+   * IE11 & Firefox<29 measures the inner-width
+   */
   var div = document.createElement('div');
   div.style.width = '200px';
   div.style.padding = '1px 2px 3px 4px';
@@ -413,7 +473,11 @@ return getSize;
 
 });
 
-
+/**
+ * matchesSelector v2.0.2
+ * matchesSelector( element, '.selector' )
+ * MIT license
+ */
 
 /*jshint browser: true, strict: true, undef: true, unused: true */
 
@@ -463,7 +527,10 @@ return getSize;
 
 }));
 
-
+/**
+ * Fizzy UI utils v2.0.7
+ * MIT license
+ */
 
 /*jshint browser: true, undef: true, unused: true, strict: true */
 
@@ -655,7 +722,11 @@ utils.toDashed = function( str ) {
 };
 
 var console = window.console;
-
+/**
+ * allow user to initialize classes via [data-namespace] or .js-namespace class
+ * htmlInit( Widget, 'widgetName' )
+ * options are parsed from data-namespace-options
+ */
 utils.htmlInit = function( WidgetClass, namespace ) {
   utils.docReady( function() {
     var dashedNamespace = utils.toDashed( namespace );
@@ -698,7 +769,9 @@ return utils;
 
 }));
 
-
+/**
+ * Outlayer Item
+ */
 
 ( function( window, factory ) {
   // universal module definition
@@ -810,7 +883,10 @@ proto.getSize = function() {
   this.size = getSize( this.element );
 };
 
-
+/**
+ * apply CSS styles to element
+ * @param {Object} style
+ */
 proto.css = function( style ) {
   var elemStyle = this.element.style;
 
@@ -949,6 +1025,11 @@ proto.setPosition = function( x, y ) {
 
 // ----- transition ----- //
 
+/**
+ * @param {Object} style - CSS
+ * @param {Function} onTransitionEnd
+ */
+
 // non transition, just trigger callback
 proto._nonTransition = function( args ) {
   this.css( args.to );
@@ -960,7 +1041,14 @@ proto._nonTransition = function( args ) {
   }
 };
 
-
+/**
+ * proper transition
+ * @param {Object} args - arguments
+ *   @param {Object} to - style to transition to
+ *   @param {Object} from - style to start transition from
+ *   @param {Boolean} isCleaning - removes transition styles after transition
+ *   @param {Function} onTransitionEnd - callback
+ */
 proto.transition = function( args ) {
   // redirect to nonTransition if no transition duration
   if ( !parseFloat( this.layout.options.transitionDuration ) ) {
@@ -1016,7 +1104,16 @@ proto.enableTransition = function(/* style */) {
     return;
   }
 
-
+  // make `transition: foo, bar, baz` from style object
+  // HACK un-comment this when enableTransition can work
+  // while a transition is happening
+  // var transitionValues = [];
+  // for ( var prop in style ) {
+  //   // dash-ify camelCased properties like WebkitTransition
+  //   prop = vendorProperties[ prop ] || prop;
+  //   transitionValues.push( toDashedAll( prop ) );
+  // }
+  // munge number to millisecond, to match stagger
   var duration = this.layout.options.transitionDuration;
   duration = typeof duration == 'number' ? duration + 'ms' : duration;
   // enable transition styles
@@ -1082,7 +1179,10 @@ proto.disableTransition = function() {
   this.isTransitioning = false;
 };
 
-
+/**
+ * removes style property from element
+ * @param {Object} style
+**/
 proto._removeStyles = function( style ) {
   // clean up transition styles
   var cleanStyle = {};
@@ -1161,7 +1261,11 @@ proto.onRevealTransitionEnd = function() {
   }
 };
 
-
+/**
+ * get style property use for hide/reveal transition end
+ * @param {String} styleProperty - hiddenStyle/visibleStyle
+ * @returns {String}
+ */
 proto.getHideRevealTransitionEndProperty = function( styleProperty ) {
   var optionStyle = this.layout.options[ styleProperty ];
   // use opacity
@@ -1279,7 +1383,11 @@ var GUID = 0;
 var instances = {};
 
 
-
+/**
+ * @param {Element, String} element
+ * @param {Object} options
+ * @constructor
+ */
 function Outlayer( element, options ) {
   var queryElement = utils.getQueryElement( element );
   if ( !queryElement ) {
@@ -1343,12 +1451,17 @@ var proto = Outlayer.prototype;
 // inherit EvEmitter
 utils.extend( proto, EvEmitter.prototype );
 
-
+/**
+ * set options
+ * @param {Object} opts
+ */
 proto.option = function( opts ) {
   utils.extend( this.options, opts );
 };
 
-
+/**
+ * get backwards compatible option value, check old name
+ */
 proto._getOption = function( option ) {
   var oldOption = this.constructor.compatOptions[ option ];
   return oldOption && this.options[ oldOption ] !== undefined ?
@@ -1389,7 +1502,11 @@ proto.reloadItems = function() {
 };
 
 
-
+/**
+ * turn elements into Outlayer.Items to be used in layout
+ * @param {Array or NodeList or HTMLElement} elems
+ * @returns {Array} items - collection of new Outlayer Items
+ */
 proto._itemize = function( elems ) {
 
   var itemElems = this._filterFindItemElements( elems );
@@ -1406,11 +1523,19 @@ proto._itemize = function( elems ) {
   return items;
 };
 
-
+/**
+ * get item elements to be used in layout
+ * @param {Array or NodeList or HTMLElement} elems
+ * @returns {Array} items - item elements
+ */
 proto._filterFindItemElements = function( elems ) {
   return utils.filterFindElements( elems, this.options.itemSelector );
 };
 
+/**
+ * getter method for getting item elements
+ * @returns {Array} elems - collection of item elements
+ */
 proto.getItemElements = function() {
   return this.items.map( function( item ) {
     return item.element;
@@ -1439,7 +1564,9 @@ proto.layout = function() {
 // _init is alias for layout
 proto._init = proto.layout;
 
-
+/**
+ * logic before any new layout
+ */
 proto._resetLayout = function() {
   this.getSize();
 };
@@ -1449,7 +1576,16 @@ proto.getSize = function() {
   this.size = getSize( this.element );
 };
 
-
+/**
+ * get measurement from option, for columnWidth, rowHeight, gutter
+ * if option is String -> get element from selector string, & get size of element
+ * if option is Element -> get size of element
+ * else use option as a number
+ *
+ * @param {String} measurement
+ * @param {String} size - width or height
+ * @private
+ */
 proto._getMeasurement = function( measurement, size ) {
   var option = this.options[ measurement ];
   var elem;
@@ -1468,7 +1604,10 @@ proto._getMeasurement = function( measurement, size ) {
   }
 };
 
-
+/**
+ * layout a collection of item elements
+ * @api public
+ */
 proto.layoutItems = function( items, isInstant ) {
   items = this._getItemsForLayout( items );
 
@@ -1477,14 +1616,23 @@ proto.layoutItems = function( items, isInstant ) {
   this._postLayout();
 };
 
-
+/**
+ * get the items to be laid out
+ * you may want to skip over some items
+ * @param {Array} items
+ * @returns {Array} items
+ */
 proto._getItemsForLayout = function( items ) {
   return items.filter( function( item ) {
     return !item.isIgnored;
   });
 };
 
-
+/**
+ * layout items
+ * @param {Array} items
+ * @param {Boolean} isInstant
+ */
 proto._layoutItems = function( items, isInstant ) {
   this._emitCompleteOnItems( 'layout', items );
 
@@ -1507,7 +1655,11 @@ proto._layoutItems = function( items, isInstant ) {
   this._processLayoutQueue( queue );
 };
 
-
+/**
+ * get item layout position
+ * @param {Outlayer.Item} item
+ * @returns {Object} x and y position
+ */
 proto._getItemLayoutPosition = function( /* item */ ) {
   return {
     x: 0,
@@ -1515,7 +1667,12 @@ proto._getItemLayoutPosition = function( /* item */ ) {
   };
 };
 
-
+/**
+ * iterate over array and position each item
+ * Reason being - separating this logic prevents 'layout invalidation'
+ * thx @paul_irish
+ * @param {Array} queue
+ */
 proto._processLayoutQueue = function( queue ) {
   this.updateStagger();
   queue.forEach( function( obj, i ) {
@@ -1534,7 +1691,13 @@ proto.updateStagger = function() {
   return this.stagger;
 };
 
-
+/**
+ * Sets position of item in DOM
+ * @param {Outlayer.Item} item
+ * @param {Number} x - horizontal position
+ * @param {Number} y - vertical position
+ * @param {Boolean} isInstant - disables transitions
+ */
 proto._positionItem = function( item, x, y, isInstant, i ) {
   if ( isInstant ) {
     // if not transition, just set CSS
@@ -1545,6 +1708,10 @@ proto._positionItem = function( item, x, y, isInstant, i ) {
   }
 };
 
+/**
+ * Any logic you want to do after each layout,
+ * i.e. size the container
+ */
 proto._postLayout = function() {
   this.resizeContainer();
 };
