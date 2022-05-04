@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="fr"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="fr"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="fr"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="fr">
+<!--<![endif]-->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <title>Processus Pôle Emploi</title>
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/stroke.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shCore.css" media="all">
+    <link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shThemeRDark.css" media="all">
+
+    <!-- CUSTOM -->
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+</head>
+
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+            document.documentElement.scrollTo({ top: 0, behavior: 'smooth' })
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelector('#mode').addEventListener('click',()=>{
+                document.querySelector('html').classList.toggle('dark');
+            })
+        });
+
+
+    </script>
+
+    <div id="wrapper">
+
+        <div id="mode" >
+            <div class="dark">
+                <svg aria-hidden="true" viewBox="0 0 512 512">
+                    <title>lightmode</title>
+                    <path fill="currentColor" d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z"></path>
+                </svg>
+            </div>
+            <div class="light">
+                <svg aria-hidden="true" viewBox="0 0 512 512">
+                    <title>darkmode</title>
+                    <path fill="currentColor" d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z"></path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <section id="top" class="section docs-heading">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="big-title text-center">
+                            <h1>Processus Pôle Emploi</h1>
+                            <p>Merci pour votre confiance et bonne formation.<br>
+                                En cas de difficulté, n'hésitez pas à nous contacter par mail à l'adresse :<br>
+                            <strong>vdubois@formasmart.com</strong></p>
+                        </div>
+                        <!-- end title -->
+                    </div>
+                    <!-- end 12 -->
+                </div>
+                <!-- end row -->
+
+                <hr>
+
+            </section>
+            <!-- end section -->
+
+            <div class="row">
+
+                <div class="col-md-3">
+                    <nav class="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="navigation">
+                        <ul class="nav">
+                            <li><a href="#line1">Financez votre formation</a></li>
+                            <li><a href="#line2">Qu'est-ce que l'AIF ?</a></li>
+                            <li><a href="#line3">A qui s'adresse l'AIF ?</a></li>
+                            <li><a href="#line4">Financement complémentaire CPF</a></li>
+                            <li><a href="#line5">Financement Total Pôle Emploi</a></li>
+                        </ul>
+                    </nav >
+                </div>
+                <div class="col-md-9">
+                    <section class="welcome">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                               <h2 class="dark-text">Introduction<hr></h2>
+                                <div class="row">
+
+                                    <div class="col-md-12 full">
+                                        <div class="intro1">
+                                            <ul>
+                                                <li><strong>Entreprise : </strong>FORMA SMART</li>
+                                                <li><strong>Diriger par : </strong>Jean-Phillippe BROWN et Valentin DUBOIS</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- end row -->
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="line1" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Financiez votre formation avec Pôle Emploi <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3>La formation est une étape indispensable pour créer votre création d'entreprise,
+                                mais aucun financement n'est possible pour prendre en charge le coût de votre formation ?
+                                    <br>
+                                Pôle Emploi peut vous aider avec l'<strong>aide individuelle à la formation (AIF)</strong>.</h3>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line2" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Qu'est-ce que l'AIF ? <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3>C'est une aide au financement de votre formation qui peut prendre votre charge soit la
+                                    <strong>totalité de coût de la formation soit petre en complément d'autres financements
+                                        (ex: en complément de votre compte CPF)</strong></h3>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line3" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">A qui s'adresse l'AIF ? <hr></h2>
+                            </div>
+                            <!-- end col -->
+
+
+                            <h3>Les demandeurs d'emploi inscrits à Pôle Emploi et les personnes en accompagnement de :</h3>
+
+                            <h3>
+                                Contrat de Reclassement Professionnel (CRP)<br>
+                                Contrat de Transition Professionnelle (CTP)<br>
+                                Contrat de Sécurisation Professionnelle (CSP)
+                            </h3>
+
+                        </div>
+                        <!-- end row -->
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line4" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">1. Vous demandez un financement complémentaire à votre CPF<hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div>
+                                <h4><strong>Vos droits formations ne sont pas suffisants pour entrer en formation </strong></h4>
+                                <h3>Vous pouvez bénéficier d'un financement complémentaire de la part de votre région ou de Pôle Emploi.</h3>
+                                <h3>La demande d'abondement Pôle Emploi se fait directement et facilement depuis
+                                <a href="https://www.moncompteformation.gouv.fr/espace-prive/html/#/">Mon Compte Formation</a></h3>
+                            </div>
+                            <!-- end col -->
+
+                            <pre class="brush: html; highlight: [2,4]">
+                                Je me connecte sur Mon Compte Formation et je suis identifié comme demandeur d'emploi inscrit à Pôle Emploi
+                            </pre>
+                            <!-- end col -->
+
+                            <pre class="brush: html; highlight: [2,4]">
+                            Je choisis la formation "Création d'Entreprise" de Forma Smart</pre>
+                            <!-- end col -->
+
+                            <pre class="brush: html; highlight: [2,4]">
+                            J'envoie une demande d'inscription à Forma Smart</pre>
+                            <!-- end col -->
+
+                            <pre class="brush: html; highlight: [2,4]">
+                            Je reçois une proposition commerciale de la part de Forma Smart</pre>
+                            <!-- end col -->
+
+                            <pre class="brush: html; highlight: [2,4]">
+                            Je sélectionne les abondements auxquels je suis éligible</pre>
+                            <!-- end col -->
+
+                            <pre class="brush: html; highlight: [2,4]">
+                            Je fais une demande d'abondement en ligne Pôle Emploi pour le reste à payer</pre>
+                            <!-- end col -->
+
+                            <pre class="brush: html; highlight: [2,4]">
+                            Pôle Emploi réponde sous 10 jours maximum</pre>
+                            <!-- end col -->
+
+                            <pre class="brush: html; highlight: [2,4]">
+                            Financement accepté ou réfusé.
+                            Dans le cas où le dossier est accepté, la validation est automatique.</pre>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line5" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">2. Vous demandez un financement total par Pôle Emploi <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <h3>Dans le cadre du conseil en évolution professionnelle (CEP), votre
+                                    conseiller vous accompagne dans la mise en œuvre de votre projet de
+                                    formation et dans la recherche d’un financement.
+                                </h3>
+                            </div>
+
+
+                            <h3>
+                                <strong>Vous devez faire valider votre projet de formation par votre conseiller avant
+                                    tout financement possible par Pôle Emploi. </strong><br>
+                                En effet, votre démarche de formation doit être cohérente avec votre projet personnalisé d’accès à l’emploi (PPAE).
+
+                            </h3>
+                            <!-- end col -->
+
+                            <h3>
+                                Demandez un devis AIF à <a href="mailto:vdubois@formasmart.com">vdubois@formasmart.com</a> en indiquant votre
+                                <strong>numéro de demandeur d'emploi (suite de lettres et un chiffre) ainsi
+                                    que votre région & département.</strong>
+                            </h3>
+                            <!-- end col -->
+
+                            <h3>
+                                <strong>Forma Smart vous transmet un devis dans votre espace personnel</strong>
+                                    <a href="https://www.pole-emploi.fr/accueil/">pole-emploi.fr</a> (rubrique « Mon parcours de formation » puis « Mes
+                                    demandes de financements ») ou sur l’application mobile Ma formation (rubrique « devis »)
+
+                            </h3>
+                            <!-- end col -->
+
+                            <h3>
+                                <strong>Vous devez l’étudier et si vous validez le devis, </strong>
+                                celui-ci sera transmis automatiquement à Pôle emploi pour traitement.
+                            </h3>
+                            <!-- end col -->
+
+                            <h3>
+                                Après étude de votre devis par Pôle emploi pour vérifier la cohérence avec votre projet de formation,
+                                <strong>Pôle emploi accepte ou refuse votre devis.
+                                    Vous êtes informé directement depuis votre espace personnel sur pole-emploi.fr ou l’application Ma Formation</strong>
+
+                            </h3>
+                            <!-- end col -->
+
+                            <h2><a style="color: darkred" href="https://www.pole-emploi.fr/files/live/sites/auvergne-rhone-alpes/files/rhone-alpes/candidat/191218pasapasvaliderdevisformati">TUTO PÔLE EMPLOI</a></h2>
+
+                        </div>
+                        <!-- end row -->
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line11" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Copyright<hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3>Fait par Forma Smart</h3>
+                            
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+                </div>
+                <!-- // end .col -->
+
+            </div>
+            <!-- // end .row -->
+
+        </div>
+        <!-- // end container -->
+
+    </div>
+    <!-- end wrapper -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/retina.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+
+    <!-- CUSTOM PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="js/syntax-highlighter/scripts/shCore.js"></script>
+    <script src="js/syntax-highlighter/scripts/shBrushXml.js"></script>
+    <script src="js/syntax-highlighter/scripts/shBrushCss.js"></script>
+    <script src="js/syntax-highlighter/scripts/shBrushJScript.js"></script>
+
+</body>
+
+</html>

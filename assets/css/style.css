@@ -580,13 +580,6 @@ section {
   transition: all ease-in-out 0.3s;
 }
 
-.services .icon-box {
-  text-align: center;
-  padding: 80px 80px;
-  transition: all ease-in-out 0.3s;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-}
-
 .services .icon-box .icon {
   margin: 0 auto;
   width: 64px;
@@ -630,6 +623,7 @@ section {
 .services .icon-box:hover {
   background: #cc1616;
   border-color: #cc1616;
+  color: white;
   padding: 70px 20px 90px 20px;
 }
 .services .icon-box:hover .icon {
@@ -719,6 +713,7 @@ section {
 .portfolio li:last-child {
   margin-right: 0;
 }
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
