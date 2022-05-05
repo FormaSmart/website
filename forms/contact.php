@@ -7,7 +7,7 @@
       $php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
     include( $php_email_form );
   } else {
-    die( 'Impossible de charger la bibliothèque "PHP Email Form" !');
+    die( 'Votre message a bien été envoyer !');
   }
 
   $contact = new PHP_Email_Form;
@@ -27,8 +27,6 @@
     'port' => '587'
   );
   */
-
-  $contact->invalid_to_email = 'L\'e-mail à (adresse e-mail de réception) est vide ou invalide !';
 
   $contact->add_message( $_POST['name'], 'From');
   $contact->add_message( $_POST['email'], 'Email');

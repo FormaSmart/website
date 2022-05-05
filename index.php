@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Forma Smart</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="images/logo1.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<!-- ======= Header ======= -->
+<header id="header" class="d-flex align-items-center">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <!--<h1 class="logo"><a href="pole_emploi.html">Day</a></h1>-->
+    <!-- Uncomment below if you prefer to use an image logo -->
+    <a href="index.php" class="logo"><img src="images/logo1.png" alt="" class="img-fluid"></a>
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto" href="#accompagnement">Formation</a></li>
+        <li><a class="nav-link scrollto" href="#financement">Financement</a></li>
+        <li><a class="nav-link scrollto" href="#formule">Formules</a></li>
+        <li><a class="nav-link scrollto" href="#avis">Avis</a></li>
+        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+  </div>
+</header><!-- End Header -->
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+  <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
+    <h1 style="text-align: center"><a style="color: #1e7798">Forma Smart</a> Création d'Entreprise</h1>
+    <!--<h2 style="text-align: center">On vous propose diverses formations même à distance</h2>-->
+    <!--<a href="#" class="btn-get-started scrollto">En savoir +</a>-->
+  </div>
+</section><!-- End Hero -->
+
+<main id="main">
+
+  <!-- ======= Accompagnement Section ======= -->
+  <section id="accompagnement" class="about">
+    <div class="container">
+
+      <div class="section-title">
+        <span>Nos Formations</span>
+        <h2>Nos Formations</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+          <img src="assets/img/about.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+          <p style="padding-top: 150px">
+            Nos formations apporte connaissance et expertise sur le milieu de l'entrepreneuriat, elles vous permettront d'aborder sereinement votre projet.<br>
+            Un accompagnement clé-en-main vous sera proposer : administratif, fiscal et juridique.
+          </p>
+          <ul>
+            <li><i class="bi bi-check-circle"></i> Répondez à notre questionnaire</li>
+            <li><i class="bi bi-check-circle"></i> Un conseiller vous rappel</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End About Section -->
+
+  <!-- ======= Information Section ======= -->
+  <section id="information" class="why-us">
+    <div class="container">
+
+      <div class="section-title">
+        <span>Pourquoi sommes-nous différents ?</span>
+        <h2>Pourquoi sommes-nous différents ?</h2>
+        <p><strong>L'avenir se construit aujourd'hui. Forma Smart à déterminer 4 objectifs prioritaires dans le but de
+          satisfaire vos besoins afin de construire ensemble une relation durable.</strong></p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-6" data-aos="fade-up">
+          <div class="box">
+            <span>La Qualité :</span>
+            <p>La compétence n'est pas un hasard : c'est pourquoi nous nous engageons
+              à vous proposer des prestations irréprochables qui répondent aux besoins du marché actuel.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="150">
+          <div class="box">
+            <span>Le savoir-faire :</span>
+            <p>Des formateurs experts et surtout pédagogues pour garantir une
+              transmission optimale des compétences.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="padding-top: 15px">
+        <div class="col-lg-6" data-aos="fade-up">
+          <div class="box">
+            <span>L'&#233;coute :</span>
+            <p>Nous vous accompagnons tout au long de la formation selon une
+              méthodologie précise et une présence permanante</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+          <div class="box">
+            <span>La flexibilité :</span>
+            <p>Se former où l'on veut, quand on veut au meilleur coût</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Formules Section -->
+
+
+
+  <!-- ======= Clients Section ======= -->
+  <section id="clients" class="clients">
+    <div class="container" data-aos="zoom-in">
+
+      <div class="row d-flex align-items-center">
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <img href="https://www.moncompteformation.gouv.fr/espace-prive/html/#/" src="images/cpf.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="600">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <img src="images/qualiopi.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="800">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <img href="https://www.pole-emploi.fr/accueil/" src="images/pole_emploi.jfif" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="800">
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+  </section><!-- End Clients Section -->
+
+
+
+  <!-- ======= Taux Section ======= -->
+  <section id="taux" class="services">
+    <div class="container">
+
+      <div class="section-title">
+        <span>Informations Complémentaires</span>
+        <h2>Informations Complémentaires</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-accessibility"></i></div>
+            <h4>R&#233;f&#233;rent Handicap</h4>
+            <p>Jean-Philippe BROWN</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-alarm"></i></div>
+            <h4>D&#233;lais d'acc&#232;s :</h4>
+            <p>11 jours</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bxs-book"></i></div>
+            <h4>Accessibilit&#233;</h4>
+            <p>Pr&#233;inscription <br> Entretien t&#233;l&#233;phonique <br> &#201;valuation de pr&#233;formation</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-tachometer"></i></div>
+            <h4>Dur&#233;e</h4>
+            <p>14H - 105H</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Services Section -->
+
+  <!-- ======= Counts Section ======= -->
+  <section id="counts" class="counts">
+    <div class="container">
+
+      <div class="row no-gutters">
+
+        <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+          <div class="count-box">
+            <i class="bi bi-emoji-smile"></i>
+            <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
+            <p>TAUX DE <strong style="color: #cc1616">SATISFACTION</strong></p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+          <div class="count-box">
+            <i class="bi bi-journal-richtext"></i>
+            <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
+            <p>TAUX DE <strong style="color: #cc1616">PARTICIPATION</strong></p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+          <div class="count-box">
+            <i class="bi bi-award"></i>
+            <span data-purecounter-start="0" data-purecounter-end="94" data-purecounter-duration="1" class="purecounter"></span>
+            <p>TAUX DE <strong style="color: #cc1616">R&#201;USSITE</strong></p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+          <div class="count-box">
+            <i class="bi bi-people"></i>
+            <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+            <p>NOMBRE DE <strong style="color: #cc1616">PERSONNE </strong> FORME</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Counts Section -->
+
+  <!-- ======= Financement Section ======= -->
+  <section id="financement" class="portfolio">
+    <div class="container">
+
+      <div class="section-title">
+        <span>Nos Financements</span>
+        <h2>Nos Financements</h2>
+      </div>
+
+      <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="150">
+
+        <div class="col-lg-4 col-md-6 portfolio-item">
+          <img src="images/cpf.png" class="img-fluid" alt="" style="position: relative; left: 100px; top: 0;">
+          <div class="portfolio-info">
+            <a href="processus/cpf.pdf" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus" style="position: relative; left: 100px; top: 0;"></i></a>
+            <a href="documentation/cpf.html" class="details-link" title="More Details"><i class="bx bx-link" style="position: relative; left: 100px; top: 0;"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item">
+          <img src="images/pole_emploi.jfif" class="img-fluid" alt="" style="position: relative; left: 320px; top: 0;">
+          <div class="portfolio-info">
+            <a href="processus/pole_emploi.pdf" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" ><i class="bx bx-plus" style="position: relative; left: 320px; top: 0;"></i></a>
+            <a href="documentation/pole_emploi.html" class="details-link" title="More Details"><i class="bx bx-link" style="position: relative; left: 320px; top: 0;"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Portfolio Section -->
+
+  <!-- ======= Formules Section ======= -->
+  <section id="formule" class="pricing">
+    <div class="container">
+
+      <div class="section-title">
+        <span>Nos Formules</span>
+        <h2>Nos formules</h2>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="150">
+          <div class="box">
+            <h3>Création d'entreprise</h3>
+            <h4>1 000<sup>€</sup></h4>
+            <ul>
+              <li>Pour 14h</li>
+              <li>A distance/Présentiel</li>
+              <li>Actions de formation dispensées aux créateurs et repreneurs d'entreprise</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="CE/CE-14H.pdf" class="btn-buy">En savoir +</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 mt-md-0" data-aos="zoom-in">
+          <div class="box featured">
+            <h3>Création d'entreprise</h3>
+            <h4>1 500<sup>€</sup></h4>
+            <ul>
+              <li>Pour 25h</li>
+              <li>A distance/Présentiel</li>
+              <li>Actions de formation dispensées aux créateurs et repreneurs d'entreprise</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="CE/CE-25H.pdf" class="button">En savoir +</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+          <div class="box">
+            <h3>Création d'entreprise</h3>
+            <h4>2 000<sup>€</sup></h4>
+            <ul>
+              <li>Pour 35h</li>
+              <li>A distance/Présentiel</li>
+              <li>Actions de formation dispensées aux créateurs et repreneurs d'entreprise</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="CE/CE-35H.pdf" class="btn-buy">En savoir +</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 mt-md-0" data-aos="zoom-in" style="padding-top: 15px">
+          <div class="box featured">
+            <h3>Création d'entreprise</h3>
+            <h4>2 500<sup>€</sup></h4>
+            <ul>
+              <li>Pour 50h</li>
+              <li>A distance/Présentiel</li>
+              <li>Actions de formation dispensées aux créateurs et repreneurs d'entreprise</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="CE/CE-50H.pdf" class="button">En savoir +</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="150" style="padding-top: 15px">
+          <div class="box">
+            <h3>Création d'entreprise</h3>
+            <h4>3 000<sup>€</sup></h4>
+            <ul>
+              <li>Pour 60h</li>
+              <li>A distance/Présentiel</li>
+              <li>Actions de formation dispensées aux créateurs et repreneurs d'entreprise</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="CE/CE-60H.pdf" class="btn-buy">En savoir +</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 mt-md-0" data-aos="zoom-in" style="padding-top: 15px">
+          <div class="box featured">
+            <h3>Création d'entreprise</h3>
+            <h4>3 500<sup>€</sup></h4>
+            <ul>
+              <li>Pour 70h</li>
+              <li>A distance/Présentiel</li>
+              <li>Actions de formation dispensées aux créateurs et repreneurs d'entreprise</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="CE/CE-70H.pdf" class="button">En savoir +</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Pricing Section -->
+
+  <!-- ======= Avis Section ======= -->
+  <section id="avis" class="team">
+    <div class="container">
+
+      <div class="section-title">
+        <span>Avis</span>
+        <h2>Avis</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+          <div class="member">
+            <img src="assets/img/team/team-1.jpg" alt="">
+            <h4>Sabrina MARTIN</h4>
+            <p>
+              Suite à la recommandation d'une amie, j'ai eu l'occasion d'avoir les cours
+              à distance et continuer dans mon travail aussi
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+          <div class="member">
+            <img src="assets/img/team/team-2.jpg" alt="">
+            <h4>Sarah MOULIN</h4>
+            <p>
+              La formation est simple et clair. Je suis heureuse d'avoir pu faire cette formation. Merci !
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+          <div class="member">
+            <img src="assets/img/team/team-3.jpg" alt="">
+            <h4>Thibault LAMBERT</h4>
+            <p>
+              Site facile d'utilisation et la formation compréhensible et à distance
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Team Section -->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container">
+
+      <div class="section-title">
+        <span>Contact</span>
+        <h2>Contact</h2>
+      </div>
+
+      <div class="row" data-aos="fade-up">
+        <div class="col-lg-6">
+          <div class="info-box mb-4">
+            <i class="bx bx-map"></i>
+            <h3>Notre Adresse</h3>
+            <p href="https://goo.gl/maps/JR1HaRdDLxzBdpg97">5 Rue de Vimoutiers, 75 013 Paris</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="info-box  mb-4">
+            <i class="bx bx-envelope"></i>
+            <h3>Notre Email</h3>
+            <p href="mailto:contact@formasmart.com">mdesire@formasmart.com</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="info-box  mb-4">
+            <i class="bx bx-phone-call"></i>
+            <h3>Notre numéro</h3>
+            <p>07 66 63 25 45</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row" data-aos="fade-up">
+
+        <div class="col-lg-6 ">
+          <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.4088776375993!2d2.3692834174438477!3d48.831339100000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67223ee923c2d%3A0xbb432ec184bbdfdf!2s5%20Rue%20de%20Vimoutiers%2C%2075013%20Paris!5e0!3m2!1sfr!2sfr!4v1651657730716!5m2!1sfr!2sfr" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+        </div>
+
+        <div class="col-lg-6">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <h4 style="text-align: center"><strong>Pour être recontacté, remplissez notre formulaire</strong></h4>
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Votre Nom" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Votre Email" required>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Objet" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Chargement ...</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Votre message a bien été envoyé. Merci !</div>
+            </div>
+            <div class="text-center"><button type="submit" href="mailto:zwolf@outlook.fr">Envoyer</button></div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Contact Section -->
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-6 col-md-6">
+          <div class="footer-info">
+            <h3>FORMA SMART</h3>
+            <p>
+              5 Rue de Vimoutiers<br>
+              75 013 Paris<br><br>
+              <strong>Numéro:</strong>&nbsp;&nbsp;07 66 63 25 45<br>
+              <strong>Email:</strong>&nbsp;&nbsp;mdesire@formasmart.com<br>
+            </p>
+            <div class="social-links mt-3">
+              <a href="https://www.facebook.com/FormaSmart75" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://instagram.com/centre_forma_smart?igshid=YmMyMTA2M2Y=" class="instagram"><i class="bx bxl-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Liens : </h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#accompagnement">Accompagnement</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#financement">Financement</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#formule">Formules</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Nos autres sites :</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="https://formasmart.github.io/Scrum/index.html#intro">Scrum</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="https://formasmart.github.io/micro-creche/">Micro-crèche</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Informations :</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="CONDITIONS%20GENERALES%20DE%20VENTE%20-%20INTERNET.pdf">CGV</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="Mentions%20légales.pdf">Mentions Légal</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="politique%20de%20confidentialité.pdf">Politique de Confidentialité</a></li>
+          </ul>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="copyright">
+      &copy; Copyright <strong><span>FORMA SMART</span></strong>. Tous les droits réservés
+    </div>
+    <div class="credits">
+      Fait par <a href="https://formasmart.github.io/website/index.html">Forma Smart</a>
+    </div>
+  </div>
+</footer><!-- End Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<div id="preloader"></div>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/purecounter/purecounter.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Main JS File -->
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
