@@ -587,6 +587,56 @@
 
 <!-- Main JS File -->
 <script src="assets/js/main.js"></script>
+<script src="dist/cookie.notice.js"></script>
+<script src="dist/cookie.notice.min.js"></script>
+<script>
+  new cookieNoticeJS({
+
+    // Localizations of the notice message
+    'messageLocales': {
+      'it': 'Custom localized message'
+    },
+
+    // Localizations of the dismiss button text
+    'buttonLocales': {
+      'it': 'Chiudi'
+    },
+
+    // Position for the cookie-notifier (default=bottom)
+    'cookieNoticePosition':'bottom',
+
+    // Shows the "learn more button (default=false)
+    'learnMoreLinkEnabled':false,
+
+    // The href of the learn more link must be applied if (learnMoreLinkEnabled=true)
+    'learnMoreLinkHref':'/learn/more/index.html',
+
+    // Text for optional learn more button
+    'learnMoreLinkText':{
+      'en':'learn more',
+      'fr':'en savoir plus'
+    },
+
+    // The message will be shown again in X days
+    'expiresIn': 60,
+
+    // Dismiss button background color
+    'buttonBgColor': '#f50000',
+
+    // Dismiss button text color
+    'buttonTextColor': '#fff',
+
+    // Notice background color
+    'noticeBgColor': '#000',
+
+    // Notice text color
+    'noticeTextColor': '#fff',
+
+    // the lernMoreLink color (default='#009fdd')
+    'linkColor':'#f50000'
+
+  });
+</script>
 
 
 </body>
