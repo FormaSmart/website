@@ -171,7 +171,7 @@
 
         noticeStyle.position = 'fixed';
 
-        if (position === 'bottom') {
+        if (position === 'top') {
             noticeStyle.top = '0';
         } else {
             noticeStyle.bottom = '0';
